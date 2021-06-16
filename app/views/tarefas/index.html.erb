@@ -22,9 +22,9 @@
         <td><%= tarefa.inicio %></td>
         <td><%= tarefa.previsao %></td>
         <td><%= tarefa.status %></td>
-        <td><%= link_to 'Show', tarefa %></td>
-        <td><%= link_to 'Edit', edit_tarefa_path(tarefa) %></td>
-        <td><%= link_to 'Destroy', tarefa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'mostrar', tarefa %></td>
+        <td><%= link_to 'editar', edit_tarefa_path(tarefa) %></td>
+        <td><%= link_to 'deletar', tarefa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
