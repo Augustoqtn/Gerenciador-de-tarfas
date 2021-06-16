@@ -20,10 +20,5 @@
   <%= @tarefa.previsao %>
 </p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @tarefa.status %>
-</p>
-
-<%= link_to 'Edit', edit_tarefa_path(@tarefa) %> |
-<%= link_to 'Back', tarefas_path %>
+<%= link_to 'editar', edit_tarefa_path(@tarefa) %> |
+<%= link_to 'voltar', tarefas_path %>
