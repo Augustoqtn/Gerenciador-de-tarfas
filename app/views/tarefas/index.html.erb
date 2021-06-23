@@ -20,10 +20,10 @@
         <td><%= tarefa.descricao %></td>
         <td><%= tarefa.inicio %></td>
         <td><%= tarefa.previsao %></td>
-        <td><%= link_to 'mostrar', tarefa %></td>
-        <td><%= link_to 'editar', edit_tarefa_path(tarefa) %></td>
-        <td><%= link_to 'concuida', tarefa, method: :delete, data: { confirm: 'você concluiu esta tarefa?' } %></td>
-      </tr>
+        <td><%= link_to 'show', tarefa %></td>
+        <td><%= link_to 'edit', edit_tarefa_path(tarefa) %></td>
+       <td><%= link_to 'Destroy', tarefa, method: :delete, data: { confirm: 'Are you sure?' } %>
+       </td>
     <% end %>
   </tbody>
 </table>
