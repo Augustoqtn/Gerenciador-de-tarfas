@@ -1,7 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<strong>O nome do país é:</strong>
+<%= @pais %>
+
+<p>O nome da cidade é <%= @cidade %></p>
+
 <p>
-  <strong>Nome:</strong>
+  <strong>Nome da Tarefa:</strong>
   <%= @tarefa.nome %>
 </p>
 
@@ -20,5 +25,7 @@
   <%= @tarefa.previsao %>
 </p>
 
-<%= link_to 'editar', edit_tarefa_path(@tarefa) %> |
+<%= link_to 'editar URL', edit_tarefa_url(@tarefa) %> |
+<%= link_to 'editar PATH', edit_tarefa_path(@tarefa) %> |
+<%= link_to 'Caminho que eu escolhi', "/tarefas/#{@tarefa.id}" %> |
 <%= link_to 'voltar', tarefas_path %>
